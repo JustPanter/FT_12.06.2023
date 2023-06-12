@@ -11,7 +11,23 @@
 
 **РЕШЕНИЕ:**
 1. Создан репозиторий - https://github.com/JustPanter/FT_12.06.2023
-2. Нарисована блок-схема алгоритма
+2. Нарисована блок-схема алгоритма - ![Блок-схема алгоритма] (https://github.com/JustPanter/FT_12.06.2023/blob/main/Block%20diagram%20of%20the%20algorithm.jpg)
 3. Добавлен файл README.md
-4. Написан код программы
+4. Написан код программы:
+
+Создаем возможность ввода массива:\
+*Console.WriteLine("Введите массив через запятую: ");*
+*string text = Console.ReadLine();*
+
+Разделяем элементы массива:\
+*string[] existArray = text.Split(",");*
+
+Проверяем элементы массива на заданный размер и удовлетворяющие
+условию элементы записываем в новый массив:\
+*string[] newArray = existArray.Where(text=>text.Length<4).ToArray();*
+
+Выводим ответ:\
+*Console.WriteLine("Массив из строк, длина которых меньше либо равна 3: ");*
+*Console.WriteLine(String.Join(",", newArray));*
+
 5. Использован контроль версий
